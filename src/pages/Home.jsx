@@ -3,12 +3,22 @@ import img3 from '../assets/images/image 3.svg'
 import img4 from '../assets/images/image 4.svg'
 import img5 from '../assets/images/image 5.svg'
 import img6 from '../assets/images/image 6.svg'
+import test1 from '../assets/images/test1.svg'
+import metamask from '../assets/images/metamask.svg'
+import opensea from '../assets/images/opensea.svg'
+import Mid from '../components/Mid'
+import image7 from '../assets/images/image 7.svg'
+import image8 from '../assets/images/image 8.svg'
+import image9 from '../assets/images/image 9.svg'
+import Footer from '../components/Footer'
+
 const Home = () => {
   return (
+    <div className='container'>
     <div className='home__container'>
         <div className='home__top'>
             <div className='home__top__left'>
-                <h1 className='home__header'>Rent a <span className='header__diff'>Place</span> 
+                <h1 className='home__header'>Rent a <span className='header__diff'>Place </span> 
                 away from <span className='header__diff'>Home</span> in the <span className='header__diff'>Metaverse</span></h1>
                 <div className='home__top__words'>
                     <p>we provide you access to luxury and affordable houses in the metaverse,
@@ -31,7 +41,34 @@ const Home = () => {
                 </div>
             </div>
         </div>
+
       
+    </div>
+    
+        <div className='divide__line'>
+            <div className='divide__line__content'>
+                <img src={test1} alt='' />
+                <img src={metamask} alt='' />
+                <img src={opensea} alt='' />
+            </div>
+        </div>
+
+       <Mid/>
+       <div className='home__bottom'>
+            <div className='home__bottom__left'>
+                <h3>Metabnb NFTs</h3>
+                <p>Discover our NFT gift cards collection. 
+                Loyal customers gets amazing gift cards which are traded as NFTs. 
+                These NFTs gives our cutomer access to loads of our exclusive services.</p>
+                <button className='home__bottom__btn'>Learn More</button>
+            </div>
+            <div className='home__bottom__right'>
+                <img className='img7 img' src={image7} alt='' />
+                <img className='img8 img' src={image8} alt='' />
+                <img className='img9 img' src={image9} alt='' />
+            </div>
+       </div>
+       <Footer/>
     </div>
   )
 }
