@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { AppContext } from '../App'
 import logo from '../assets/meta_logo.png' 
 const Navbar = () => {
+    const {setShow} = useContext(AppContext)
   return (
     <nav className='navbar'>
         <div className='navbar__wrapper'>
@@ -8,12 +11,13 @@ const Navbar = () => {
                 <img src={logo} alt='metabnb_logo.png' />
             </div>
             <div className='navbar__mid'>
-                <span className='nav__title'>
+            <Link to='/' className='link'><span className='nav__title'>
                     Home
-                </span>
-                <span className='nav__title'>
+                </span></Link>
+
+                <Link to='/place_to_stay' className='link'><span className='nav__title'>
                     Place to stay
-                </span>
+                </span></Link>
                 <span className='nav__title'>
                     NFTs
                 </span>
@@ -22,10 +26,10 @@ const Navbar = () => {
                 </span>
             </div>
             <div className='navbar__right'>
-                <button className='wallet__btn'>Connect Wallet</button>
+                <button className='wallet__btn' onClick={()=>setShow(true)}>Connect Wallet</button>
             </div>
         </div>
-      
+
     </nav>
   )
 }

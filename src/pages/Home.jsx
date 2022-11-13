@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import img3 from '../assets/images/image 3.svg'
 import img4 from '../assets/images/image 4.svg'
 import img5 from '../assets/images/image 5.svg'
@@ -10,9 +10,11 @@ import Mid from '../components/Mid'
 import image7 from '../assets/images/image 7.svg'
 import image8 from '../assets/images/image 8.svg'
 import image9 from '../assets/images/image 9.svg'
-import Footer from '../components/Footer'
+import Modal from '../modal/Modal'
+import { AppContext } from '../App'
 
 const Home = () => {
+    const {show} = useContext(AppContext)
   return (
     <div className='container'>
     <div className='home__container'>
@@ -68,7 +70,7 @@ const Home = () => {
                 <img className='img9 img' src={image9} alt='' />
             </div>
        </div>
-       <Footer/>
+       {show &&<Modal/>}
     </div>
   )
 }

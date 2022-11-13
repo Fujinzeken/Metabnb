@@ -16,7 +16,7 @@ const Footer = () => {
                 <img src={instagram} alt='footer.png' />
                 <img src={twitter} alt='footer.png' />
                 </div>
-                
+                <p>&copy;2022 Metabnb</p>
             </div>
             <div className='footer__right'>
                 <div className='footer__links'>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <p>Contact Us</p>
                 </div>
             </div>
-            <p>&copy;2022 Metabnb</p>
+            
         </div>
     </div>
   )
