@@ -35,6 +35,16 @@ const Places = () => {
             <span>Carbins</span>
             <span>off-grid</span>
             <span>Farm</span>
+            <select className='select__input'>
+            <option>Resturant</option>
+            <option>Cottage</option>
+            <option>Castle</option>
+            <option>fantasy City</option>
+            <option>beach</option>
+            <option>Carbins</option>
+            <option>off-grid</option>
+            <option>Farm</option>
+            </select>
             <img src={location} alt='location.png'/>
         </div>
         <div className='home__image__wrapper'>

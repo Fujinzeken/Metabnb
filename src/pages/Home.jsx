@@ -28,18 +28,18 @@ const Home = () => {
                 </div>
                 <form className='input__box'>
                     <input type='input' placeholder='search for location' className='input'/>
-                    <button className='wallet__btn search'>Search</button>
+                    <button className='search__btn'>Search</button>
                 </form>
 
             </div>
             <div className='home__top__right'>
                 <div className='img__container left'>
                     <img src={img4} alt='image5.png' />
-                    <img src={img6} alt='image5.png' />
+                    <img className='shift__img' src={img6} alt='image5.png' />
                 </div>
                 <div className='img__container'>
                     <img src={img3} alt='image3.png' />
-                    <img src={img5} alt='image5.png' />
+                    <img className='shift__img' src={img5} alt='image5.png' />
                 </div>
             </div>
         </div>
@@ -56,6 +56,7 @@ const Home = () => {
         </div>
 
        <Mid/>
+
        <div className='home__bottom'>
             <div className='home__bottom__left'>
                 <h3>Metabnb NFTs</h3>

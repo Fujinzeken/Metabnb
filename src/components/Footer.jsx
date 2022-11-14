@@ -16,7 +16,7 @@ const Footer = () => {
                 <img src={instagram} alt='footer.png' />
                 <img src={twitter} alt='footer.png' />
                 </div>
-                <p>&copy;2022 Metabnb</p>
+                <p className='copyright'>&copy;2022 Metabnb</p>
             </div>
             <div className='footer__right'>
                 <div className='footer__links'>
@@ -33,7 +33,7 @@ const Footer = () => {
                     <p>Beach</p>
                     <p>Learn More</p>
                 </div>
-                <div className='footer__links'>
+                <div className='footer__links about'>
                     <h6 className='footer__link__topic'>About Us</h6>
                     <p>Road Map</p>
                     <p>Creator</p>
