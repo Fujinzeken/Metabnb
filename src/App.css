@@ -548,7 +548,7 @@ color: #434343;
   line-height: 20px;
 }
 
-@media(max-width:800px){
+@media (max-width:800px){
   .navbar__wrapper{
     padding: 25px 20px;
     align-items: center;
@@ -602,13 +602,13 @@ color: #434343;
     margin-left: -30px;
   } 
   .img__container img{
-   width: 220px;
+   width: 200px;
    height: 150px;
    object-fit: contain;
   }
   
   .left{
-    margin-right: 0px;  
+    margin-right: 8px;  
   }
   
   .divide__line__content img{
